@@ -1,8 +1,76 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(255, 255, 255);
 } h1{
-    font-size: 32px;
+    font-size: 3rem; /* 1 rem = 16px  1em = 'M'*/
     font-weight: bold;
+    color: rgb(255, 4, 4);
 }
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky; /* pode ser necessário top ou left */
+    top:0;
+}
+
+ header ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ header a{
+    color:#ffff;
+    font-weight: 700;
+    padding: .5rem 1rem;
+
+}
+
+
+header a:hover{
+    background-color: #bc3333
+}
+
+
+section{
+    height: 80vh;
+    margin: 2rem;
+    scroll-margin-top: 4rem;
+    padding: 1rem;
+    border: 1px solid black;
+    /* overflow: hidden; */
+}
+
+p {
+    margin-bottom: 1 rem;
+
+}
+
+footer{
+    background-color: aliceblue;
+}
+
+form input{
+    border: 1px solid black;
+}
+
+form textarea{
+    border: 1px solid black;
+}
+
+form button{
+    border: 1px solid black ;
+}
+
+
+
+
+
