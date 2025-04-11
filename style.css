@@ -1,20 +1,25 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-} h1{
+    background-color: #177ce9;
+} 
+
+h1{
     font-size: 3rem; /* 1 rem = 16px  1em = 'M'*/
     font-weight: bold;
-    color: rgb(255, 4, 4);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0px 2.5px rgb(0, 0, 0);
 }
 
 h2{
     font-size: 1.5rem;
     font-weight: 700;
-    color: #ff0000;
+    color: #000000;
+    text-shadow: 0 0px 2px rgb(0, 0, 0)
 }
 
 header{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 81, 255);
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     position: sticky; /* pode ser necessário top ou left */
@@ -36,21 +41,24 @@ header{
 
 
 header a:hover{
-    background-color: #bc3333
+    background-color: #63a1e8
 }
 
 
 section{
-    height: 80vh;
+    height:fit-content ;
     margin: 2rem;
+    border-radius: 10px;
     scroll-margin-top: 4rem;
     padding: 1rem;
-    border: 1px solid black;
+    border: 3px solid black;
     /* overflow: hidden; */
+    background-color: rgb(255,255 ,255 );
+    margin-bottom: 15px;
 }
 
 p {
-    margin-bottom: 1 rem;
+    margin-bottom: 1rem;
 
 }
 
