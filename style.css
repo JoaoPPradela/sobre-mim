@@ -22,6 +22,7 @@ header {
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     position: sticky;
+
     top: 0;
 }
 
@@ -145,4 +146,50 @@ section#softSkills li{
     gap: 1rem;
     flex-wrap: wrap;
 }
+
+#avaliacao {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#avaliacao h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#avaliacao form {
+    display: flex;
+    flex-direction: column;
+}
+
+#avaliacao label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#avaliacao select,
+#avaliacao textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#avaliacao button {
+    padding: 10px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#avaliacao button:hover {
+    background-color: #128C7E;
+}
+
 

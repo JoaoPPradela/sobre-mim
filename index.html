@@ -165,20 +165,44 @@
          <section id="contato">
             <h2>Entre em contato comigo</h2>
             <form>
-                <input type="text" name="nome">
-                <input type="email" name="email">
-                <textarea name="mensagem" rows="5" cols="50"></textarea>
+                <input type="text" name="nome" placeholder="Digite seu nome aqui">
+                <input type="email" name="email" placeholder="Digite seu email aqui">
+                <textarea name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
                 <input type="submit" name="botaoEnviar">
                 <button type="button" name="botaoEnviar"></button>
             </form>
+            <p>Ou, se preferir:</p>
+    <a href="https://wa.me/5511993223781" target="_blank" title="Clique para falar comigo no WhatsApp">
+        <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+            💬 Fale comigo no WhatsApp
+        </button>
+</section>
          </section>
-
-         <footer id="rodape">
-            <p>Links úteis</p>
-            <li><a href="https://github.com/JoaoPPradela" title="Acesse meu GitHub">Meu GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/joao-pradela/" title="Acesse meu Linkedin">Acesse meu Linkedin</a></li>
-            <p>Copyright</p>
-            © Copyright Todos os Direitos Resevados, João Pedro dos Santos Pradela
+            <footer id="rodape">
+                <!-- Seção de Avaliação -->
+                <section id="avaliacao">
+                    <h3>Deixe sua Avaliação</h3>
+                    <form action="#" method="POST">
+                        <label for="nota">Sua nota (de 1 a 5):</label>
+                        <select id="nota" name="nota" required>
+                            <option value="1">1 - Muito ruim</option>
+                            <option value="2">2 - Ruim</option>
+                            <option value="3">3 - Regular</option>
+                            <option value="4">4 - Bom</option>
+                            <option value="5">5 - Excelente</option>
+                        </select>
+                        
+                        <label for="comentario">Comentário:</label>
+                        <textarea id="comentario" name="comentario" rows="4" placeholder="Deixe seu comentário aqui..." required></textarea>
+                        
+                        <button type="submit">Enviar Avaliação</button>
+                    </form>
+                    <p>Links úteis</p>
+                    <li><a href="https://github.com/JoaoPPradela" title="Acesse meu GitHub">Meu GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/joao-pradela/" title="Acesse meu Linkedin">Acesse meu Linkedin</a></li>
+                </section>
+            </footer>
          </footer>
+         
     </body>
 </html>
