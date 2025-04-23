@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
     <head>
         <!--Meta informações sobre a página-->
         <meta charset="UTF-8">
@@ -29,14 +29,16 @@
                    <li><a href="#meusProjetos">Meus projetos</a></li>
                    <li><a href="#meusArtigos">Meus artigos</a></li>
                    <li><a href="#contato">Contato</a></li>
+                   <li><span id="botao-tema">🔦</span></li>
+                   <li><span id="botao-contraste">🌓</span></li>
                </ul>
             </nav>
         </header>
 
         <section id="sobreMim">
             <h1>Sobre mim</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam accusamus nam fugit a laboriosam dolorum odit, laborum delectus, dolorem magni in. Accusamus error reiciendis neque. Officiis repellendus unde debitis eaque.</p>
             <img src="Pradela.jpg" alt ="Foto de um homem branco de bigode, olho azul e cabelo loiro " width="200" title="Foto de um homem branco de bigode, olho azul e cabelo loiro.">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam accusamus nam fugit a laboriosam dolorum odit, laborum delectus, dolorem magni in. Accusamus error reiciendis neque. Officiis repellendus unde debitis eaque.</p>
             <!-- section>(h2{Nova seção})+p*2>lorem20 -->
 
 
@@ -159,7 +161,51 @@
          </section>
 
          <section id="meusArtigos">
-            <h2>Meus artigos</h2>
+            <h2 class="titulo-secao">Meus artigos</h2>
+            <div class="artigos cards-em-linhas">
+
+                <article class="card">
+                    <header>
+                        <h3 class="titulo-card">Portifólio profissional usando GitHub Pages</h3>
+                        <span class="data-publicacao">15 abr 2025</span>
+                        <span class="autor">João Pradela</span>
+                    </header>
+                    <p>Crie o publique seu Portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                    <footer>
+                        <button type="button" class="botao botao-continue">Continue lendo</button>
+                        <button type="button" class="botao botao-compartilhar ">Compartilhar</button>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3 class="titulo-card">Portifólio profissional usando GitHub Pages</h3>
+                        <span class="data-publicacao">15 abr 2025</span>
+                        <span class="autor">João Pradela</span>
+                    </header>
+                    <p>Crie o publique seu Portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                    <footer>
+                        <button type="button" class="botao botao-continue">Continue lendo</button>
+                        <button type="button" class="botao botao-compartilhar ">Compartilhar</button>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h3 class="titulo-card">Portifólio profissional usando GitHub Pages</h3>
+                        <span class="data-publicacao">15 abr 2025</span>
+                        <span class="autor">João Pradela</span>
+                    </header>
+                    <p>Crie o publique seu Portfólio profissional usando GitHub Pages, uma maneira fácil e gratuita de mostrar seus projetos e habilidades.</p>
+                    <footer>
+                        <button type="button" class="botao botao-continue">Continue lendo</button>
+                        <button type="button" class="botao botao-compartilhar ">Compartilhar</button>
+                    </footer>
+                </article>
+
+
+            </div>
+
          </section>
 
          <section id="contato">
@@ -168,41 +214,55 @@
                 <input type="text" name="nome" placeholder="Digite seu nome aqui">
                 <input type="email" name="email" placeholder="Digite seu email aqui">
                 <textarea name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
-                <input type="submit" name="botaoEnviar">
-                <button type="button" name="botaoEnviar"></button>
+                <button type="button" name="botaoEnviar">Solicitar contato</button>
             </form>
             <p>Ou, se preferir:</p>
     <a href="https://wa.me/5511993223781" target="_blank" title="Clique para falar comigo no WhatsApp">
-        <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+        <button class="botao-whatsapp">
             💬 Fale comigo no WhatsApp
         </button>
 </section>
          </section>
             <footer id="rodape">
-                <!-- Seção de Avaliação -->
-                <section id="avaliacao">
-                    <h3>Deixe sua Avaliação</h3>
-                    <form action="#" method="POST">
-                        <label for="nota">Sua nota (de 1 a 5):</label>
-                        <select id="nota" name="nota" required>
-                            <option value="1">1 - Muito ruim</option>
-                            <option value="2">2 - Ruim</option>
-                            <option value="3">3 - Regular</option>
-                            <option value="4">4 - Bom</option>
-                            <option value="5">5 - Excelente</option>
-                        </select>
-                        
-                        <label for="comentario">Comentário:</label>
-                        <textarea id="comentario" name="comentario" rows="4" placeholder="Deixe seu comentário aqui..." required></textarea>
-                        
-                        <button type="submit">Enviar Avaliação</button>
-                    </form>
+                
                     <p>Links úteis</p>
                     <li><a href="https://github.com/JoaoPPradela" title="Acesse meu GitHub">Meu GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/joao-pradela/" title="Acesse meu Linkedin">Acesse meu Linkedin</a></li>
                 </section>
             </footer>
          </footer>
+   
+         <script>
+            // Verifica se os elementos existem antes de tentar usar
+            const botaoTema = document.querySelector("#botao-tema");
+            const botaoContraste = document.querySelector("#botao-contraste");
+        
+            if (botaoTema) {
+                botaoTema.addEventListener("click", trocaTema);
+            }
+        
+            if (botaoContraste) {
+                botaoContraste.addEventListener("click", trocaAltoContraste);
+            }
+        
+            function trocaTema(){
+                const root = document.documentElement;
+                if (root.getAttribute("data-theme") === "dark") {
+                    root.removeAttribute("data-theme");
+                } else {
+                    root.setAttribute("data-theme", "dark");
+                }
+            }
+        
+            function trocaAltoContraste() {
+                const root = document.documentElement;
+                if (root.getAttribute("data-theme") === "contrast") {
+                    root.removeAttribute("data-theme");
+                } else {
+                    root.setAttribute("data-theme", "contrast");
+                }
+            }
+        </script>
          
     </body>
 </html>
